@@ -172,7 +172,7 @@ def playerAttack():
             if criticalChance > 70:
                 print("CRITICAL HIT!!")
                 criticalBonus = 1.4
-            damage = userStatus[3] * monDefPercentage * criticalBonus
+            damage = userStats[3] * monDefPercentage * criticalBonus
             print("Damage " + str(damage))
             monsterStats[4] -= damage
         else:
